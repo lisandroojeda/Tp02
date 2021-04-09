@@ -14,5 +14,6 @@ public class Main {
         Object[] resultado = yo.calcularDeudaYPuntosObtenidos();
         System.out.println(resultado[0]);
         System.out.println(resultado[1]);
+        System.out.println("Europa todo esto es por vos");
     }
 }
