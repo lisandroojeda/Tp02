@@ -8,4 +8,9 @@ public class CopiaLibro {
     public Libro libro() {
         return libro;
     }
+
+    public double precio(){
+        return libro.Precio();
+    }
+
 }

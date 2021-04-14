@@ -2,12 +2,13 @@ package ar.unrn.programa;
 
 public class Main {
     public static void main(String args[]) {
-        Libro elTunel = new Libro("El Túnel", Libro.REGULARES);
-        Libro antesDelFin = new Libro("Antes del Fin", Libro.REGULARES);
+        LibroRegulares elTunel = new LibroRegulares("El Túnel");
+        LibroRegulares antesDelFin = new LibroRegulares("Antes del Fin");
         CopiaLibro elTunelCopia = new CopiaLibro(elTunel);
         CopiaLibro antesDelFinCopia = new CopiaLibro(antesDelFin);
-        Alquiler alquilerElTunel = new Alquiler(elTunelCopia, 5);
-        Alquiler alquilerAntesDelFin = new Alquiler(antesDelFinCopia, 3);
+        AlquilerRegulares alquilerElTunel = new AlquilerRegulares(elTunelCopia, 5);
+        AlquilerRegulares alquilerAntesDelFin = new AlquilerRegulares(antesDelFinCopia, 3);
+        AlquilerRegulares alquilerAntesDelFin2 = new AlquilerRegulares(antesDelFinCopia, 5);
         Cliente yo = new Cliente("Javier");
         yo.alquilar(alquilerElTunel);
         yo.alquilar(alquilerAntesDelFin);

@@ -1,17 +1,15 @@
 package ar.unrn.programa;
 
-public class Alquiler {
-        private CopiaLibro copia;
-        private int diasAlquilados;
-        public Alquiler(CopiaLibro copia, int diasAlquilados) {
-            this.copia = copia;
-            this.diasAlquilados = diasAlquilados;
-        }
-        public int diasAlquilados() {
-            return this.diasAlquilados;
-        }
-        public CopiaLibro copia() {
-            return this.copia;
-        }
+public abstract class Alquiler  {
+    protected CopiaLibro copia;
+    protected int diasAlquilados;
+
+
+    public Alquiler(CopiaLibro copia, int diasAlquilados){
+        this.copia = copia;
+        this.diasAlquilados = diasAlquilados;
+    }
+    abstract double calcularMonto();
+    abstract int calcularPuntos();
     }
 

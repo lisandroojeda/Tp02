@@ -1,0 +1,8 @@
+- Se edito la clase Alquiler y Libro para convertirlas en abstractas que son extendidas
+  por AlquilerNuevoLanzamiento,AlquilerRegulares,AlquilerInfantiles y LibroInfantiles
+  LibroNuevoLanzamiento,LibroRegulares respectivamente
+- Las nuevas clases Libro me permiten suprimir el switch y con eso lograr
+  editar Cliente y abstraer  la logica de negocio que correspondia a
+  alquileres
+- La clase copiaLibro opte por no tocarla porque puede que sea necesaria para mantener
+  algun inventario en el programa
