@@ -15,10 +15,10 @@ public class calculo1 {
         LibroRegulares antesDelFin = new LibroRegulares("Antes del Fin");
         CopiaLibro elTunelCopia = new CopiaLibro(elTunel);
         CopiaLibro antesDelFinCopia = new CopiaLibro(antesDelFin);
-        AlquilerRegulares alquilerElTunel = new AlquilerRegulares(elTunelCopia, 5);
-        AlquilerRegulares alquilerAntesDelFin = new AlquilerRegulares(antesDelFinCopia, 3);
+        Alquiler alquilerElTunel = new Alquiler(elTunelCopia, 5);
+        Alquiler alquilerAntesDelFin = new Alquiler(antesDelFinCopia, 3);
         Cliente yo = new Cliente("Javier");
-        yo.alquilar(new AlquilerRegulares(elTunelCopia,5));
+        yo.alquilar(alquilerElTunel);
         yo.alquilar(alquilerAntesDelFin);
         Object[] resultado = yo.calcularDeudaYPuntosObtenidos();
 

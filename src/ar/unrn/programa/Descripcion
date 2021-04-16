@@ -1,8 +1,7 @@
-- Se edito la clase Alquiler y Libro para convertirlas en abstractas que son extendidas
-  por AlquilerNuevoLanzamiento,AlquilerRegulares,AlquilerInfantiles y LibroInfantiles
-  LibroNuevoLanzamiento,LibroRegulares respectivamente
+- La clase Libro se convirtió en una jerarquía AlquilerNuevoLanzamiento,AlquilerRegulares,AlquilerInfantiles y LibroInfantiles
+  LibroNuevoLanzamiento,LibroRegulares respectivamente aquí se evalúa el precio y el calculo de puntos
 - Las nuevas clases Libro me permiten suprimir el switch y con eso lograr
-  editar Cliente y abstraer  la logica de negocio que correspondia a
+  editar Cliente y abstraer  la lógica de negocio que correspondía a
   alquileres
 - La clase copiaLibro opte por no tocarla porque puede que sea necesaria para mantener
-  algun inventario en el programa
+  algún inventario en el programa

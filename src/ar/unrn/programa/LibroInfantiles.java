@@ -7,7 +7,15 @@ public class LibroInfantiles extends Libro{
     }
 
     @Override
-    public double Precio() {
+    public double precio(int diasAlquilados) {
+        if (diasAlquilados > 3)
+            return precio + (diasAlquilados - 3) * 1.5;
         return precio;
     }
+
+    @Override
+    public int calcularPuntos(int diasAlquilados) {
+        return 1;
+    }
+
 }

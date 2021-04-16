@@ -9,8 +9,6 @@ public class Cliente {
     public Cliente(String nombre) {
         this.name = nombre;
     }
-
-    ////crear jerarquia en libros no en alquileres
     public Object[] calcularDeudaYPuntosObtenidos() {
         Object[] resultado = new Object[2];
         double total = 0;

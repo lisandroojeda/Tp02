@@ -1,6 +1,6 @@
 package ar.unrn.programa;
 
-public abstract class Alquiler  {
+public class Alquiler  {
     protected CopiaLibro copia;
     protected int diasAlquilados;
 
@@ -9,7 +9,11 @@ public abstract class Alquiler  {
         this.copia = copia;
         this.diasAlquilados = diasAlquilados;
     }
-    abstract double calcularMonto();
-    abstract int calcularPuntos();
+    public double calcularMonto(){
+        return copia.precio(diasAlquilados);
+    };
+    public int calcularPuntos(){
+        return copia.puntos(diasAlquilados);
+    };
     }
 

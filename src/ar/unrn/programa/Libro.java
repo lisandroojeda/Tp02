@@ -12,7 +12,8 @@ public abstract class Libro {
         return nombre;
     }
 
-    public abstract double Precio();
+    public abstract double precio(int diasAlquilados);
+    public abstract int calcularPuntos(int diasAlquilados);
 
 
 }

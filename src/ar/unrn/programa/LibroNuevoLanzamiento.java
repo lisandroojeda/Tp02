@@ -8,10 +8,16 @@ public class LibroNuevoLanzamiento extends Libro{
     }
 
     @Override
-    public double Precio() {
-        return precio;
+    public double precio(int diasAlquilados) {
+        return  precio + (diasAlquilados ) * 3;
     }
 
+    @Override
+    public int calcularPuntos(int diasAlquilados) {
+        if (diasAlquilados>1)
+            return 2;
+        return 0;
+    }
 
 
 }

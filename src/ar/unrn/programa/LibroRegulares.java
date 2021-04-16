@@ -7,7 +7,14 @@ public class LibroRegulares extends Libro{
     }
 
     @Override
-    public double Precio() {
-        return precio;
+    public double precio(int diasAlquilados) {
+        if (diasAlquilados>2)
+            return precio + (diasAlquilados - 2) * 1.5;
+        return  precio;
+    }
+
+    @Override
+    public int calcularPuntos(int diasAlquilados) {
+        return 1;
     }
 }

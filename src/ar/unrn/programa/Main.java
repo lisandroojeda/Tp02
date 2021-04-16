@@ -6,9 +6,8 @@ public class Main {
         LibroRegulares antesDelFin = new LibroRegulares("Antes del Fin");
         CopiaLibro elTunelCopia = new CopiaLibro(elTunel);
         CopiaLibro antesDelFinCopia = new CopiaLibro(antesDelFin);
-        AlquilerRegulares alquilerElTunel = new AlquilerRegulares(elTunelCopia, 5);
-        AlquilerRegulares alquilerAntesDelFin = new AlquilerRegulares(antesDelFinCopia, 3);
-        AlquilerRegulares alquilerAntesDelFin2 = new AlquilerRegulares(antesDelFinCopia, 5);
+        Alquiler alquilerElTunel = new Alquiler(elTunelCopia, 5);
+        Alquiler alquilerAntesDelFin = new Alquiler(antesDelFinCopia, 3);
         Cliente yo = new Cliente("Javier");
         yo.alquilar(alquilerElTunel);
         yo.alquilar(alquilerAntesDelFin);

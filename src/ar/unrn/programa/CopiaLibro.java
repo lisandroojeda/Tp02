@@ -9,8 +9,12 @@ public class CopiaLibro {
         return libro;
     }
 
-    public double precio(){
-        return libro.Precio();
+    public double precio(int diasAlquilado){
+        return libro.precio(diasAlquilado);
+    }
+
+    public int puntos(int diasAlquilado){
+        return libro().calcularPuntos(diasAlquilado);
     }
 
 }
